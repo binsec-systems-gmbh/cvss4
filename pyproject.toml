@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools"]
+
+[project]
+name = "cvss4"
+version = "2023.1"
+authors = [
+  {name = "Florian Zavatzki", email = "fz@binsec.systems"}
+]
+description = "CVSS 4.0 calculator"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-pyhton = ">=3.9"
+
+[tool.setuptools.packages.find]
+exclude = ["debian"]
+
+[tool.ruff]
+select = [
+    "ANN",
+    "E",
+    "F",
+    "W",
+    "PTH",
+    "TCH",
+    "SIM",
+    "SLF",
+    "RET",
+    "DTZ",
+    "C4",
+    "COM",
+    "B",
+    "S",
+]
+ignore = ["D100", "ANN101", "ANN102", "ANN401", "SIM108"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.ruff.flake8-annotations]
+allow-star-arg-any = true
