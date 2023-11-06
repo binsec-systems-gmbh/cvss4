@@ -1,0 +1,23 @@
+Source: cvss4
+Section: python
+Priority: optional
+Maintainer: Florian Zavatzki <fz@binsec.systems>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ pybuild-plugin-pyproject,
+ python3-setuptools,
+ python3-all,
+Standards-Version: 4.6.2
+Homepage: https://github.com/binsec-systems-gmbh/cvss4
+
+Package: python3-cvss4
+Architecture: all
+Depends:
+ ${python3:Depends},
+ ${misc:Depends},
+Description: python CVSS 4.0 score calculator
+ This library provides a CVSS 4.0 score calculator on a given vector string.
+ .
+ This package installs the library for Python 3.

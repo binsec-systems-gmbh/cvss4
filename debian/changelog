@@ -1,0 +1,5 @@
+cvss4 (2023.1-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Florian Zavatzki <fz@binsec.systems>  Mon, 06 Nov 2023 09:29:08 +0100
