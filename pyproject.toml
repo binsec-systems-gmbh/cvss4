@@ -10,7 +10,7 @@ authors = [
 description = "CVSS 4.0 calculator"
 readme = "README.md"
 license = {file = "LICENSE"}
-requires-pyhton = ">=3.9"
+requires-python = ">=3.9"
 
 [tool.setuptools.packages.find]
 exclude = ["debian"]
